@@ -139,7 +139,8 @@ ul li a {
     flex-wrap: wrap;
 }
 .imgAbout img{
-    max-width: 540px;
+    max-width: 100%;
+    width: 540px;
     height: 525px;
 }
 
@@ -192,7 +193,8 @@ ul li a {
 .thiss{
     position: absolute;
     bottom: -5%;
-    max-width: 560px;
+    max-width: 100%;
+    width: 560px;
     max-height: 680px;
     right: 0%;
     z-index: -1;
@@ -208,12 +210,14 @@ ul li a {
 }
 
 .imgNews img{
-    max-width: 480px;
+    max-width: 100%;
+    width: 480px;
     height: 317px;
     margin-right: 7rem;
 }
 .imgpr img{
-    max-width: 515px;
+    max-width: 100%;
+    width: 515px;
     height: 615px;
     margin-right: 7rem;
 }
