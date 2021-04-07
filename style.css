@@ -7,7 +7,7 @@ body{
     font-family: 'Roboto', sans-serif;
     position: relative;
     /* padding: 0 24px; */
-    /* overflow-x: hidden; */
+     overflow-x: none;
     -webkit-font-smoothing: antialiased;
 
 }
@@ -107,7 +107,7 @@ ul li a {
     max-width: var(--wide-screen);
     position: relative;
     margin:0 auto;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +118,7 @@ ul li a {
 }
 .content_subHeader h1{
     font-size: 50px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     line-height: 66px;
     color: var(--color-btn);
 }
@@ -178,6 +178,7 @@ ul li a {
     flex: 1 0 500px;
     text-align: center;
 }
+
 .content-about{
     max-width: 90%;
 }
@@ -243,13 +244,11 @@ ul li a {
     max-width: 100%;
     width: 480px;
     height: 317px;
-    margin-right: 7rem;
 }
 .imgpr img{
     max-width: 100%;
     width: 515px;
     height: 615px;
-    margin-right: 7rem;
 }
 .container-purchase{
     background: #F3F5FF;
@@ -314,9 +313,34 @@ footer{
         align-items: center;
         justify-content: center;
     }
+    .content-purchase{
+        text-align: center;
+    }
+    .content_subHeader h1{
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .content_subHeader p{
+        font-size: 16px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .content-about{
+        max-width: 100%;
+    }
+    .content-about h2{
+        font-size: 32px;        
+        text-align: center;
+    }
+    .content-about p{
+        max-width: 90%;
+        margin: 0px auto;
+    }
+    
 }
-@media (max-width: 1024px){
-    .thiss{
+@media screen and (max-width: 1024px){
+    .thiss, .this{
         display: none;
     }
     .container-about{
@@ -326,12 +350,31 @@ footer{
         text-align: center;
     }
     .content_subHeader{
-        width: 100vh;
+        max-width: 100%;
     }
     .container-subHeader{
         padding: 0 24px;
     }
     footer{
         padding: 0 48px;
+    }
+    .buttons_subHeader{
+        justify-content: center;
+    }
+    .content_subHeader h1{
+        margin-bottom: 24px;
+    }
+    
+    .content-about h2{
+        margin-bottom: 24px;
+    }
+    .content-about p{
+        margin: 12px auto;
+    }
+    .colContent h3{
+        margin: 12px 0;
+    }
+    .buttons_subHeader{
+        margin-top: 32px;
     }
 }
